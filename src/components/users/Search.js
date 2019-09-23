@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-class SearchUser extends Component {
+class Search extends Component {
   state = {
     text: ''
   };
@@ -15,7 +15,7 @@ class SearchUser extends Component {
     if (this.state.text === '')
       this.props.setAlert('Please enter some text', 'light');
     else {
-      this.props.findUser(this.state.text);
+      this.props.searchUser(this.state.text);
       this.setState({ text: '' });
     }
   };
@@ -48,4 +48,4 @@ class SearchUser extends Component {
   }
 }
 
-export default SearchUser;
+export default Search;
