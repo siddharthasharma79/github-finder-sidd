@@ -1,21 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const User = props => {
-  const {
-    login,
-    // id,
-    avatar_url
-    // url,
-    // html_url,
-    // followers_url,
-    // following_url,
-    // gists_url,
-    // starred_url,
-    // subscriptions_url,
-    // organizations_url,
-    // repos_url
-  } = props.user;
+const UserItem = props => {
+  const { login, avatar_url } = props.user;
   return (
     <div className="card text-center">
       <img
@@ -33,4 +20,4 @@ const User = props => {
     </div>
   );
 };
-export default User;
+export default UserItem;
